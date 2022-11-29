@@ -11,16 +11,12 @@
     <title>FeedBack</title>
   </head>
   <body>
-    <form>
+    <form action="/feedback" method="post">
 
         <h2>Name</h2>
-        <div class="form-row mx-sm-3 mb-2">
-          <div class="col">
-            <input type="text" name = "Fname" class="form-control" placeholder="First name">
-          </div>
-          <div class="col">
-            <input type="text" name = "Lname" class="form-control" placeholder="Last name">
-          </div>
+        <div class="form-group mx-sm-3 mb-2">
+          <label for="name" class="sr-only">Name</label>
+          <input type="text" name = "name" class="form-control" placeholder="First name">
         </div>
         <h2>Date</h2>
         <div class="form-group mx-sm-3 mb-2">
@@ -40,30 +36,30 @@
         <h2>Category</h2>
         <div class="form-row mx-sm-5 mb-2">
             <div class="custom-control custom-checkbox col">
-                <input type="checkbox" name="checkbox" class="custom-control-input" id="asian">
+                <input type="checkbox" name="asian" class="custom-control-input" id="asian">
                 <label class="custom-control-label" for="asian">Asian</label>
             </div>
             <div class="custom-control custom-checkbox col">
-                <input type="checkbox" name="checkbox" class="custom-control-input" id="american">
+                <input type="checkbox" name="american" class="custom-control-input" id="american">
                 <label class="custom-control-label" for="american">American</label>
             </div>
             <div class="custom-control custom-checkbox col">
-                <input type="checkbox" name ="checkbox" class="custom-control-input" id="other">
+                <input type="checkbox" name ="other" class="custom-control-input" id="other">
                 <label class="custom-control-label" for="other">Other</label>
             </div>
         </div>
         <h2>Gender</h2>
-        <div class="form-group mx-sm-3 mb-3">
+        <div class="form-group mx-sm-3 mb-3" >
             <div class="custom-control custom-radio">
-                <input type="radio" id="male" name="male" class="custom-control-input">
+                <input type="radio" id="male" name="gender" value ="1" class="custom-control-input">
                 <label class="custom-control-label" for="male">Male</label>
             </div>
             <div class="custom-control custom-radio">
-                <input type="radio" id="female" name="female" class="custom-control-input">
+                <input type="radio" id="female" name="gender" value ="2" class="custom-control-input">
                 <label class="custom-control-label" for="female">Female</label>
             </div>
             <div class="custom-control custom-radio">
-                <input type="radio" id="otherGender" name="otherGender" class="custom-control-input">
+                <input type="radio" id="otherGender" name="gender" value ="0" class="custom-control-input">
                 <label class="custom-control-label" for="otherGender">Other</label>
             </div>
         </div>
